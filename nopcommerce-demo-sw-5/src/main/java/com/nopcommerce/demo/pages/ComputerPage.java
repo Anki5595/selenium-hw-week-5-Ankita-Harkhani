@@ -13,6 +13,7 @@ public class ComputerPage extends Utility {
     public String getComputerText() {
         return getTextFromElement(computerText);
     }
+
 }
 
 

@@ -396,4 +396,28 @@ public class Utility extends ManageBrowser {
         return destination;
     }
 
+    /**
+     * //When we do not have select tag for dropdown then we use this method
+     */
+    public void dynamicListDropDown(By by, String text) {
+        List<WebElement> dynamicList = driver.findElements(by);
+        for (int i = 0; i < dynamicList.size(); i++) {
+            String option = dynamicList.get(i).getText();
+            if (option.contains(text)) {
+                dynamicList.get(i).click();
+                break;
+            }
+        }
+    }
+
+    public void dynamicListDropDown(WebElement element, String text) {
+        List<WebElement> dynamicList = (List<WebElement>) element;
+        for (int i = 0; i < dynamicList.size(); i++) {
+            String option = dynamicList.get(i).getText();
+            if (option.contains(text)) {
+                dynamicList.get(i).click();
+                break;
+            }
+        }
+    }
 }

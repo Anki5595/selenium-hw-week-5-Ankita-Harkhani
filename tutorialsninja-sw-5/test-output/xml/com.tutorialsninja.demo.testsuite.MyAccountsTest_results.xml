@@ -1,13 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuite name="Test"
-           tests="1"
+           tests="4"
            failures="0"
            errors="0"
            skipped="0"
-           time="2.902">
+           time="14.165">
   <properties />
   
   
-            <testcase name="verifyUserShouldNavigateToRegisterPageSuccessfully" time="2.902" classname="com.tutorialsninja.demo.testsuite.MyAccountsTest" />
+            <testcase name="verifyThatUserRegisterAccountSuccessfully" time="6.241" classname="com.tutorialsninja.demo.testsuite.MyAccountsTest" />
+                <testcase name="verifyUserShouldNavigateToLoginPageSuccessfully" time="0.810" classname="com.tutorialsninja.demo.testsuite.MyAccountsTest" />
+                <testcase name="verifyThatUserShouldLoginAndLogoutSuccessfully" time="3.538" classname="com.tutorialsninja.demo.testsuite.MyAccountsTest" />
+                <testcase name="verifyUserShouldNavigateToRegisterPageSuccessfully" time="3.576" classname="com.tutorialsninja.demo.testsuite.MyAccountsTest" />
       
 </testsuite>

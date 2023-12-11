@@ -85,6 +85,9 @@ public class ComputerPageTest extends BaseTest {
         String expectedText = "The product has been added to your shopping cart";
         String actualText = buildYourOwnComputerPage.getMessageText();
         Assert.assertEquals(actualText, expectedText, "Text not displayed");
+
+        //Take screenshot
+
     }
 }
 

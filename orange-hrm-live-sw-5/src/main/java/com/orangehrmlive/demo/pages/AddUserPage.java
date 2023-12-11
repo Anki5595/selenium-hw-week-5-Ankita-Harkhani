@@ -1,7 +1,8 @@
 package com.orangehrmlive.demo.pages;
 
+import com.aventstack.extentreports.Status;
+import com.orangehrmlive.demo.customerslisteners.CustomListeners;
 import com.orangehrmlive.demo.utilities.Utility;
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.CacheLookup;
 import org.openqa.selenium.support.FindBy;
@@ -12,23 +13,27 @@ public class AddUserPage extends Utility {
     WebElement addUserText;
 
     @CacheLookup
-    @FindBy(xpath = ("(//div[@class='oxd-select-text-input'][normalize-space()='-- Select --'])[1]"))
+    @FindBy(xpath = "(//div[@class='oxd-select-text-input'][normalize-space()='-- Select --'])[1]")
     WebElement selectDropDown;
 
-    By userRole = By.xpath("(//span[contains(text(),'Admin')])[1]");
+    @CacheLookup
+    @FindBy(xpath = "(//span[contains(text(),'Admin')])[1]")
+    WebElement userRole;
 
     @CacheLookup
-    @FindBy(xpath = ("//input[@placeholder='Type for hints...']"))
+    @FindBy(xpath = "//input[@placeholder='Type for hints...']")
     WebElement employeeName;
     @CacheLookup
-    @FindBy(xpath = ("//input[@placeholder='Type for hints...']"))
+    @FindBy(xpath = "//input[@placeholder='Type for hints...']")
     WebElement employeeDropDown;
 
     @CacheLookup
-    @FindBy(xpath = ("//input[@class='oxd-input oxd-input--focus']"))
+    @FindBy(xpath = "//input[@class='oxd-input oxd-input--focus']")
     WebElement enterUsername;
 
-    By disabledStatus = By.xpath("//span[normalize-space()='Disabled']");
+    @CacheLookup
+    @FindBy(xpath = "//span[normalize-space()='Disabled']")
+    WebElement disabledStatus;
 
     @CacheLookup
     @FindBy(xpath = ("(//input[@type='password'])[1]"))
@@ -51,6 +56,7 @@ public class AddUserPage extends Utility {
 
     public void getTextAddUser(String text) {
         verifyThatTextIsDisplayed(addUserText, text);
+
     }
 
     public void clickOnDropDownList() {
@@ -59,6 +65,7 @@ public class AddUserPage extends Utility {
 
     public void selectUserRoleFromDropDownList(String option) {
         dynamicListDropDown(userRole, option);
+        CustomListeners.test.log(Status.SKIP, "There is a bug");
     }
 
     public void clickOnEmployeeNameOption() {
@@ -67,10 +74,13 @@ public class AddUserPage extends Utility {
 
     public void enterEmployeeNameToTheField(String name) {
         sendTextToElement(employeeName, name);
+        CustomListeners.test.log(Status.SKIP, "There is a bug");
+
     }
 
     public void selectUsernameInToTheUsernameField(String username) {
         sendTextToElement(enterUsername, username);
+        CustomListeners.test.log(Status.SKIP, "There is a bug");
     }
 
     public void selectStatusFromDropDownList(String option) {

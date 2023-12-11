@@ -27,8 +27,16 @@ public class DesktopsPage extends Utility {
     WebElement ascendingOrder;
 
     @CacheLookup
-    @FindBy(xpath = "//div[@class='caption']//a[contains(text(),'HTC Touch HD')]")
-    WebElement click;
+    @FindBy(xpath = "(//a[normalize-space()='HTC Touch HD'])[1]")
+    WebElement product1;
+
+    @CacheLookup
+    @FindBy(xpath = "(//a[normalize-space()='iPhone'])[1]")
+    WebElement product2;
+
+    @CacheLookup
+    @FindBy(xpath = "(//a[normalize-space()='Palm Treo Pro'])[1]")
+    WebElement product3;
 
     public void verifySortedElementsInReverseOrder() {
         Reporter.log("Get elements sorted in reverse order" + descendingOrder.toString());
@@ -62,8 +70,16 @@ public class DesktopsPage extends Utility {
         selectByVisibleTextFromDropDown(ascendingOrder, option);
     }
 
-    public void selectProduct(String product) {
-      sendTextToElement(click, product);
+    public void selectProduct1(String product) {
+        mouseHoverToElementAndClick(product1);
+
+    }
+    public void selectProduct2(String product) {
+       mouseHoverToElementAndClick(product2);
+
+    }
+    public void selectProduct3(String product) {
+        mouseHoverToElementAndClick(product3);
 
     }
 }

@@ -12,11 +12,69 @@
 <body>
 <h1>Test</h1>
 <p>
-  Test duration: 46.972s
+  Test duration: 359.453s
 </p>
 
 
 
+  <table class="resultsTable">
+    <tr><th colspan="3" class="header failed">Failed Tests</th></tr>
+          <tr>
+        <td colspan="3" class="group">com.tutorialsninja.demo.testsuite.DesktopsTest</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  verifyProduct3AddedToShoppingCartSuccessFully
+      </td>
+  <td class="duration">
+    15.402s
+  </td>
+  <td class="result">
+        
+          <i>Method arguments: </i><span class="arguments">"Palm Treo Pro", "3", "Success: You have added Palm Treo Pro to your shopping cart!", "Palm Treo Pro", "Product 2", "£1,242.11"</span><br />
+    
+        
+
+        <a href="javascript:toggleElement('exception-0', 'block')" title="Click to expand/collapse"><b>java.lang.AssertionError: Incorrect Total! expected [£1,242.11] but found [£621.05]</b></a><br />
+    <div class="stackTrace" id="exception-0">
+              org.testng.Assert.fail(Assert.java:111)<br />
+              org.testng.Assert.failNotEquals(Assert.java:1578)<br />
+              org.testng.Assert.assertEqualsImpl(Assert.java:150)<br />
+              org.testng.Assert.assertEquals(Assert.java:132)<br />
+              org.testng.Assert.assertEquals(Assert.java:656)<br />
+              com.tutorialsninja.demo.testsuite.DesktopsTest.verifyProduct3AddedToShoppingCartSuccessFully(DesktopsTest.java:215)<br />
+              java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+              java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)<br />
+              java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
+              java.base/java.lang.reflect.Method.invoke(Method.java:568)<br />
+              org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)<br />
+              org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)<br />
+              org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)<br />
+              org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)<br />
+              org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)<br />
+              org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)<br />
+              org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)<br />
+              org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)<br />
+              java.base/java.util.ArrayList.forEach(ArrayList.java:1511)<br />
+              org.testng.TestRunner.privateRun(TestRunner.java:848)<br />
+              org.testng.TestRunner.run(TestRunner.java:621)<br />
+              org.testng.SuiteRunner.runTest(SuiteRunner.java:443)<br />
+              org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)<br />
+              org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)<br />
+              org.testng.SuiteRunner.run(SuiteRunner.java:336)<br />
+              org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br />
+              org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)<br />
+              org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)<br />
+              org.testng.TestNG.runSuitesLocally(TestNG.java:1200)<br />
+              org.testng.TestNG.runSuites(TestNG.java:1114)<br />
+              org.testng.TestNG.run(TestNG.java:1082)<br />
+              com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)<br />
+              com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)<br />
+                </div>
+      </td>
+</tr>
+      </table>
 
 
   <table class="resultsTable">
@@ -27,17 +85,47 @@
             
 <tr>
   <td class="method">
+                  verifyProduct1AddedToShoppingCartSuccessFully
+      </td>
+  <td class="duration">
+    15.710s
+  </td>
+  <td class="result">
+        
+          <i>Method arguments: </i><span class="arguments">"HTC Touch HD", "1", "Success: You have added HTC Touch HD to your shopping cart!", "HTC Touch HD", "Product 1", "£74.73"</span><br />
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  verifyProduct2AddedToShoppingCartSuccessFully
+      </td>
+  <td class="duration">
+    19.497s
+  </td>
+  <td class="result">
+        
+          <i>Method arguments: </i><span class="arguments">"iPhone", "2", "Success: You have added iPhone to your shopping cart!", "iPhone", "product 11", "£150.92"</span><br />
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
                   verifyProductArrangeInAlphabeticalOrder
       </td>
   <td class="duration">
-    2.642s
+    7.222s
   </td>
   <td class="result">
         
     
             <div class="testOutput">
-                        Select sortBy option[[ChromeDriver: chrome on windows (ce8ab58d003ddcad2892e690e061fe1a)] -&gt; id: input-sort]<br />
-                                Get elements sorted in reverse order[[ChromeDriver: chrome on windows (ce8ab58d003ddcad2892e690e061fe1a)] -&gt; id: input-sort]<br />
+                        Select sortBy option[[ChromeDriver: chrome on windows (1ac452085b7c7ecdbaffd7d10ec6e4c4)] -&gt; id: input-sort]<br />
+                                Get elements sorted in reverse order[[ChromeDriver: chrome on windows (1ac452085b7c7ecdbaffd7d10ec6e4c4)] -&gt; id: input-sort]<br />
                   </div>
     
 
@@ -52,7 +140,21 @@
                   verifyProductsPriceDisplayHighToLowSuccessfully
       </td>
   <td class="duration">
-    4.090s
+    1.922s
+  </td>
+  <td class="result">
+        
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  verifyThatUserPlaceOrderSuccessfully
+      </td>
+  <td class="duration">
+    20.143s
   </td>
   <td class="result">
         
@@ -67,10 +169,52 @@
             
 <tr>
   <td class="method">
+                  verifyThatUserRegisterAccountSuccessfully
+      </td>
+  <td class="duration">
+    6.241s
+  </td>
+  <td class="result">
+        
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  verifyThatUserShouldLoginAndLogoutSuccessfully
+      </td>
+  <td class="duration">
+    3.538s
+  </td>
+  <td class="result">
+        
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  verifyUserShouldNavigateToLoginPageSuccessfully
+      </td>
+  <td class="duration">
+    0.810s
+  </td>
+  <td class="result">
+        
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
                   verifyUserShouldNavigateToRegisterPageSuccessfully
       </td>
   <td class="duration">
-    2.902s
+    3.576s
   </td>
   <td class="result">
         
@@ -85,10 +229,38 @@
             
 <tr>
   <td class="method">
+                  verifyUserShouldNavigateToComponentsPageSuccessfully
+      </td>
+  <td class="duration">
+    0.994s
+  </td>
+  <td class="result">
+        
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
                   verifyUserShouldNavigateToDesktopsPageSuccessfully
       </td>
   <td class="duration">
-    1.368s
+    5.707s
+  </td>
+  <td class="result">
+        
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  verifyUserShouldNavigateToLaptopsAndNotebooksPageSuccessfully
+      </td>
+  <td class="duration">
+    1.016s
   </td>
   <td class="result">
         

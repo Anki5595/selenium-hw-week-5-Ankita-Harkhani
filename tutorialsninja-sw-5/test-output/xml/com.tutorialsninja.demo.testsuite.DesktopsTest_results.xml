@@ -1,13 +1,57 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuite name="Test"
-           tests="1"
-           failures="0"
+           tests="4"
+           failures="1"
            errors="0"
            skipped="0"
-           time="2.642">
+           time="57.831">
   <properties />
+            <testcase name="verifyProduct3AddedToShoppingCartSuccessFully" time="15.402" classname="com.tutorialsninja.demo.testsuite.DesktopsTest">
+                <failure type="java.lang.AssertionError"
+                  message="Incorrect Total! expected [£1,242.11] but found [£621.05]"
+              >
+<![CDATA[java.lang.AssertionError: Incorrect Total! expected [£1,242.11] but found [£621.05]
+  org.testng.Assert.fail(Assert.java:111)
+  org.testng.Assert.failNotEquals(Assert.java:1578)
+  org.testng.Assert.assertEqualsImpl(Assert.java:150)
+  org.testng.Assert.assertEquals(Assert.java:132)
+  org.testng.Assert.assertEquals(Assert.java:656)
+  com.tutorialsninja.demo.testsuite.DesktopsTest.verifyProduct3AddedToShoppingCartSuccessFully(DesktopsTest.java:215)
+  java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+  java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+  java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+  java.base/java.lang.reflect.Method.invoke(Method.java:568)
+  org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+  org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+  org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+  org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+  org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+  org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+  org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+  org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+  java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+  org.testng.TestRunner.privateRun(TestRunner.java:848)
+  org.testng.TestRunner.run(TestRunner.java:621)
+  org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+  org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+  org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+  org.testng.SuiteRunner.run(SuiteRunner.java:336)
+  org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+  org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+  org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+  org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+  org.testng.TestNG.runSuites(TestNG.java:1114)
+  org.testng.TestNG.run(TestNG.java:1082)
+  com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+  com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+]]>
+      </failure>
+
+          </testcase>
   
   
-            <testcase name="verifyProductArrangeInAlphabeticalOrder" time="2.642" classname="com.tutorialsninja.demo.testsuite.DesktopsTest" />
+            <testcase name="verifyProductArrangeInAlphabeticalOrder" time="7.222" classname="com.tutorialsninja.demo.testsuite.DesktopsTest" />
+                <testcase name="verifyProduct1AddedToShoppingCartSuccessFully" time="15.710" classname="com.tutorialsninja.demo.testsuite.DesktopsTest" />
+                <testcase name="verifyProduct2AddedToShoppingCartSuccessFully" time="19.497" classname="com.tutorialsninja.demo.testsuite.DesktopsTest" />
       
 </testsuite>

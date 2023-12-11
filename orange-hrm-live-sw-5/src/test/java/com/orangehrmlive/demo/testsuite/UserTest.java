@@ -48,7 +48,6 @@ public class UserTest extends BaseTest {
         addUserPage.getTextAddUser("Add User");
 
         // * Select User Role "Admin"
-
         addUserPage.clickOnDropDownList();
         addUserPage.selectUserRoleFromDropDownList("Admin");
         addUserPage.clickOnEmployeeNameOption();
@@ -176,8 +175,7 @@ public class UserTest extends BaseTest {
 
         // * Select User Role
         addUserPage.clickOnDropDownList();
-
-        addUserPage.selectAdminRoleInAddUser("Admin");
+        addUserPage.selectUsernameInToTheUsernameField("Admin");
 
         // * Enter EmployeeName <employeeName>
         viewSystemUsersPage.enterEmployeeName("Ananya Dash");
@@ -185,7 +183,7 @@ public class UserTest extends BaseTest {
         // * Select status
         viewSystemUsersPage.clickOnSearchWithStatusDropDown();
 
-        addUserPage.selectStatusDisable("Disable");
+        addUserPage.selectStatusFromDropDownList("Disable");
         // viewSystemUsersPage.selectStatusFromDropDownList("Enabled");
 
         // * Click on "Search" Button
@@ -199,5 +197,6 @@ public class UserTest extends BaseTest {
 
         // * Click on Reset Tab
         viewSystemUsersPage.clickOnReSetButton();
+
     }
 }

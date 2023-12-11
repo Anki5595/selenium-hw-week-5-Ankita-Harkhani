@@ -72,8 +72,24 @@ public class LoginTest extends BaseTest {
         String expected = message;
         String actual = loginPage.getErrorMessage();
         Assert.assertEquals(actual, expected, "Invalid Input");
+
     }
 
+    @Test(groups = {"regression"}, dataProvider = "Invalid Input", dataProviderClass = TestData.class)
+    public void verifyInvalidInputMessageWithInvalidCredentials(String Username, String Password, String message) {
+        // * Login To The application
+        loginPage.logInToApplication(Username, Password);
+
+        //click on login
+        loginPage.clickOnLogin();
+
+        // * Verify Error message <errorMessage>
+        String expected = message;
+        String actual = loginPage.getInvalidInputMessage();
+        Assert.assertEquals(actual, expected, "Invalid Input");
+    }
 }
+
+
 
 
