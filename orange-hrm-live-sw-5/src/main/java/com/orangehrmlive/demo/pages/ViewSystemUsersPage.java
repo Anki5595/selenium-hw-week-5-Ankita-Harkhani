@@ -115,8 +115,8 @@ public class ViewSystemUsersPage extends Utility {
         verifyThatTextIsDisplayed(noRecordFound, text);
     }
 
-    public void verifyUsernameLabel(String text) {
-        verifyThatTextIsDisplayed(verifyUsername, text);
+    public String verifyUsernameLabel() {
+        return getTextFromElement(verifyUsername);
     }
 
     public void clickOnReSetButton() {

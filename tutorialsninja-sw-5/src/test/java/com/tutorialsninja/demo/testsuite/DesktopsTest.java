@@ -44,7 +44,7 @@ public class DesktopsTest extends BaseTest {
     }
 
 
-    @Test(groups = {"smoke", "regression"}, dataProvider = "Product1", dataProviderClass = TestData.class)
+    @Test(groups = {"smoke", "regression"}, dataProvider = "getTestData", dataProviderClass = TestData.class)
     public void verifyProduct1AddedToShoppingCartSuccessFully(String product, String qty, String successMessage,
                                                               String productName, String model, String total) {
         //2.1 Mouse hover on Currency Dropdown and click
@@ -102,7 +102,7 @@ public class DesktopsTest extends BaseTest {
 
     }
 
-    @Test(groups = {"regression"}, dataProvider = "Product2", dataProviderClass = TestData.class)
+    @Test(groups = {"regression"}, dataProvider = "getTestData", dataProviderClass = TestData.class)
     public void verifyProduct2AddedToShoppingCartSuccessFully(String product, String qty, String successMessage,
                                                               String productName, String model, String total) {
         //2.1 Mouse hover on Currency Dropdown and click
@@ -159,7 +159,7 @@ public class DesktopsTest extends BaseTest {
 
     }
 
-    @Test(groups = {"regression"}, dataProvider = "Product3", dataProviderClass = TestData.class)
+    @Test(groups = {"regression"}, dataProvider = "getTestData", dataProviderClass = TestData.class)
     public void verifyProduct3AddedToShoppingCartSuccessFully(String product, String qty, String successMessage,
                                                               String productName, String model, String total) {
         //2.1 Mouse hover on Currency Dropdown and click
@@ -214,6 +214,7 @@ public class DesktopsTest extends BaseTest {
         String actualTotal = shoppingCartPage.verifyTotal();
         Assert.assertEquals(actualTotal, expectedTotal, "Incorrect Total!");
         CustomListeners.test.addScreenCaptureFromPath("test-output/html/verifyProduct3AddedToShoppingCartSuccessFullyMon_Dec_11_21_44_11_GMT_2023.jpg");
+
     }
 
 }

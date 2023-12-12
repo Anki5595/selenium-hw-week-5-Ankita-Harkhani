@@ -4,10 +4,10 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="0.964">
+           time="1.019">
   <properties />
   
   
-            <testcase name="userShouldNavigateToLoginPageSuccessFully" time="0.964" classname="com.nopcommerce.demo.testsuite.LoginPageTest" />
+            <testcase name="userShouldNavigateToLoginPageSuccessFully" time="1.019" classname="com.nopcommerce.demo.testsuite.LoginPageTest" />
       
 </testsuite>

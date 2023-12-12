@@ -3,6 +3,7 @@ package com.orangehrmlive.demo.testsuite;
 import com.orangehrmlive.demo.customerslisteners.CustomListeners;
 import com.orangehrmlive.demo.pages.*;
 import com.orangehrmlive.demo.testbase.BaseTest;
+import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
@@ -75,7 +76,6 @@ public class UserTest extends BaseTest {
     }
 
     @Test(groups = {"sanity", "regression"})
-    // 2. searchTheUserCreatedAndVerifyIt().
     public void searchTheUserCreatedAndVerifyIt() {
         // Login to Application
         loginPage.logInToApplication("Admin", "admin123");
@@ -156,9 +156,9 @@ public class UserTest extends BaseTest {
 
     }
 
-    @Test(groups = {"regression"}, dataProvider = "Data Set", dataProviderClass = TestData.class)
-    // 4. searchTheUserAndVerifyTheMessageRecordFound().
-    public void searchTheUserAndVerifyTheMessageRecordFound() {
+    @Test(groups = {"regression"}, dataProvider = "DataSet", dataProviderClass = TestData.class)
+    public void searchTheUserAndVerifyTheMessageRecordFound(String userName, String role, String employeeName,
+                                                            String status) {
         // Login to Application
         loginPage.logInToApplication("Admin", "admin123");
 
@@ -170,20 +170,19 @@ public class UserTest extends BaseTest {
 
         // * Verify "System Users" Text
         adminPage.verifySystemUsersText("System Users");
+
         // * Enter Username <username>
-        viewSystemUsersPage.searchWithUsername("Linda.Anderson");
+        viewSystemUsersPage.searchWithUsername(userName);
 
         // * Select User Role
         addUserPage.clickOnDropDownList();
-        addUserPage.selectUsernameInToTheUsernameField("Admin");
+        addUserPage.selectUsernameInToTheUsernameField(role);
 
         // * Enter EmployeeName <employeeName>
-        viewSystemUsersPage.enterEmployeeName("Ananya Dash");
+        viewSystemUsersPage.enterEmployeeName(employeeName);
 
         // * Select status
-        viewSystemUsersPage.clickOnSearchWithStatusDropDown();
-
-        addUserPage.selectStatusFromDropDownList("Disable");
+        addUserPage.selectStatusFromDropDownList(status);
         // viewSystemUsersPage.selectStatusFromDropDownList("Enabled");
 
         // * Click on "Search" Button
@@ -193,7 +192,9 @@ public class UserTest extends BaseTest {
         viewSystemUsersPage.verifyNoRecordFoundMessage("No Records Found");
 
         // * Verify username <username>
-        viewSystemUsersPage.verifyUsernameLabel("Username");
+        String expected = userName;
+        String actual = viewSystemUsersPage.verifyUsernameLabel();
+        Assert.assertEquals(actual, expected, "Incorrect Text");
 
         // * Click on Reset Tab
         viewSystemUsersPage.clickOnReSetButton();

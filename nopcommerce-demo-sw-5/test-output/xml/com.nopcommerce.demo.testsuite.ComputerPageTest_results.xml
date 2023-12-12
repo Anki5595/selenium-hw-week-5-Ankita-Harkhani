@@ -4,10 +4,10 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="1.041">
+           time="1.188">
   <properties />
   
   
-            <testcase name="verifyUserShouldNavigateToComputerPageSuccessfully" time="1.041" classname="com.nopcommerce.demo.testsuite.ComputerPageTest" />
+            <testcase name="verifyUserShouldNavigateToComputerPageSuccessfully" time="1.188" classname="com.nopcommerce.demo.testsuite.ComputerPageTest" />
       
 </testsuite>

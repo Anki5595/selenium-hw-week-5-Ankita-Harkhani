@@ -86,7 +86,6 @@ public class ComputerPageTest extends BaseTest {
         String actualText = buildYourOwnComputerPage.getMessageText();
         Assert.assertEquals(actualText, expectedText, "Text not displayed");
 
-        //Take screenshot
 
     }
 }

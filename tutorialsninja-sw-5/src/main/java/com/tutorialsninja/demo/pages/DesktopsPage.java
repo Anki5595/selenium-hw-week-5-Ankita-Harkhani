@@ -74,10 +74,12 @@ public class DesktopsPage extends Utility {
         mouseHoverToElementAndClick(product1);
 
     }
+
     public void selectProduct2(String product) {
-       mouseHoverToElementAndClick(product2);
+        mouseHoverToElementAndClick(product2);
 
     }
+
     public void selectProduct3(String product) {
         mouseHoverToElementAndClick(product3);
 

@@ -75,7 +75,7 @@ public class LoginTest extends BaseTest {
 
     }
 
-    @Test(groups = {"regression"}, dataProvider = "Invalid Input", dataProviderClass = TestData.class)
+    @Test(groups = {"regression"}, dataProvider = "credentials", dataProviderClass = TestData.class)
     public void verifyInvalidInputMessageWithInvalidCredentials(String Username, String Password, String message) {
         // * Login To The application
         loginPage.logInToApplication(Username, Password);

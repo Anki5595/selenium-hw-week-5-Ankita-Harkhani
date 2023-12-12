@@ -17,7 +17,7 @@ public class AddUserPage extends Utility {
     WebElement selectDropDown;
 
     @CacheLookup
-    @FindBy(xpath = "(//span[contains(text(),'Admin')])[1]")
+    @FindBy(xpath = "(//div[@class='oxd-select-text-input'][normalize-space()='Admin'])[1]")
     WebElement userRole;
 
     @CacheLookup
@@ -74,17 +74,17 @@ public class AddUserPage extends Utility {
 
     public void enterEmployeeNameToTheField(String name) {
         sendTextToElement(employeeName, name);
-        CustomListeners.test.log(Status.SKIP, "There is a bug");
+        CustomListeners.test.log(Status.SKIP, "Test fail");
 
     }
 
     public void selectUsernameInToTheUsernameField(String username) {
-        sendTextToElement(enterUsername, username);
-        CustomListeners.test.log(Status.SKIP, "There is a bug");
+        mouseHoverToElementAndClick(enterUsername);
+        CustomListeners.test.log(Status.SKIP, "Test Fail");
     }
 
     public void selectStatusFromDropDownList(String option) {
-        dynamicListDropDown(disabledStatus, option);
+        mouseHoverToElementAndClick(disabledStatus);
     }
 
     public void enterPasswordInToThePasswordField(String password) {
