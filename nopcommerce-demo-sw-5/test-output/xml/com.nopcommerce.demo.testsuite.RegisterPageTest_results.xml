@@ -4,10 +4,10 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="1.203">
+           time="0.769">
   <properties />
   
   
-            <testcase name="verifyUserShouldNavigateToRegisterPageSuccessfully" time="1.203" classname="com.nopcommerce.demo.testsuite.RegisterPageTest" />
+            <testcase name="verifyUserShouldNavigateToRegisterPageSuccessfully" time="0.769" classname="com.nopcommerce.demo.testsuite.RegisterPageTest" />
       
 </testsuite>

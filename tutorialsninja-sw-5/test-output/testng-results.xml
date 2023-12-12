@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-12-12T21:56:07 GMT" name="Default Suite" finished-at="2023-12-12T21:56:30 GMT" duration-ms="22087">
+    <groups>
+      <group name="regression">
+        <method signature="DesktopsTest.verifyProduct2AddedToShoppingCartSuccessFully(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.tutorialsninja.demo.testsuite.DesktopsTest@7ee955a8]" name="verifyProduct2AddedToShoppingCartSuccessFully" class="com.tutorialsninja.demo.testsuite.DesktopsTest"/>
+      </group> <!-- regression -->
+    </groups>
+    <test started-at="2023-12-12T21:56:07 GMT" name="tutorialsninja-sw-5" finished-at="2023-12-12T21:56:30 GMT" duration-ms="22087">
+      <class name="com.tutorialsninja.demo.testsuite.DesktopsTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tutorialsninja.demo.testsuite.DesktopsTest@7ee955a8]" started-at="2023-12-12T21:56:08 GMT" name="setUp" finished-at="2023-12-12T21:56:20 GMT" duration-ms="11231" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="intIt()[pri:0, instance:com.tutorialsninja.demo.testsuite.DesktopsTest@7ee955a8]" started-at="2023-12-12T21:56:20 GMT" name="intIt" finished-at="2023-12-12T21:56:20 GMT" duration-ms="100" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- intIt -->
+        <test-method signature="verifyProduct2AddedToShoppingCartSuccessFully(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.tutorialsninja.demo.testsuite.DesktopsTest@7ee955a8]" started-at="2023-12-12T21:56:20 GMT" name="verifyProduct2AddedToShoppingCartSuccessFully" data-provider="getTestData" finished-at="2023-12-12T21:56:29 GMT" duration-ms="9167" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[iPhone]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Success: You have added iPhone to your shopping cart!]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[iPhone]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[product 11]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[£150.92]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyProduct2AddedToShoppingCartSuccessFully -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tutorialsninja.demo.testsuite.DesktopsTest@7ee955a8]" started-at="2023-12-12T21:56:29 GMT" name="tearDown" finished-at="2023-12-12T21:56:29 GMT" duration-ms="562" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.tutorialsninja.demo.testsuite.DesktopsTest -->
+    </test> <!-- tutorialsninja-sw-5 -->
+  </suite> <!-- Default Suite -->
+</testng-results>
